@@ -1,0 +1,29 @@
+
+.search-container {
+    position: relative;
+    width: 300px; 
+  
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+  
+    button[type="submit"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 280px;
+      background: white;
+      border: none;
+      cursor: pointer;
+  
+      img {
+        width: 30px; 
+        height: 30px; 
+      }
+    }
+  }
+  

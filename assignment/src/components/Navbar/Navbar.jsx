@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 import './styles.scss'
 import LOGO from '../../assets/Logo.png'
-import { IoIosSearch } from "react-icons/io";
 
+import SearchComponent from '../SearchComponent';
 
 const items = [
     { id : 1,
@@ -135,8 +135,8 @@ export default function Navbar(){
           {showList && <Dropdown items = {moreItems}/>}
         </li>
         <li  style={{textDecoration:'underline'}} className='nav-item'>
-          <IoIosSearch style={{color:'white'}}/>
-          <input type="text" defaultValue={'Search something'} style={{backgroundColor: 'transparent' , border: 'none' , color: 'white' , textDecoration: 'underline'}}/>
+          <SearchComponent/>
+          
         </li>
       </ul>
       

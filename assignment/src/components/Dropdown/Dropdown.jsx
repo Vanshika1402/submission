@@ -1,4 +1,4 @@
-npm install react-router-domimport {Link} from 'react-router-dom'
+
 import './Dropdown.css'
 export default function Dropdown({items}) {
 

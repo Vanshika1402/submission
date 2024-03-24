@@ -2,59 +2,76 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust as needed */
+  height: 70vh; 
+  position: absolute;
+  top: auto;
+  width: 100vw;
+  margin-top: 120px;
 }
 
 .image-container {
-  position: relative;
+  position: absolute;
 }
 
 .image1 {
-  width: 42vw; /* Adjust size as needed */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Ensures proper alignment */
-  margin: 0 auto; /* Horizontally center */
+  width: 42vw; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
   position: relative;
-  z-index: 3; /* Ensure the first image is above the others */
+  z-index: 3; 
   border-radius: 10px;
 }
 
 .image2, .image3, .image4 , .image5 {
-  height: auto; /* Maintain aspect ratio */
+  height: auto; 
   position: absolute;
-  top: 50%; /* Vertically center */
+  top: 50%; 
   transform: translateY(-50%);
   border-radius: 10px;
 }
 
 .image2 {
-  width: 22vw; /* Adjust size as needed */
+  width: 22vw; 
   height: auto;
-  left: -30%; /* Adjust to hide 30% behind image 1 */
-  z-index: 2; /* Ensure the second image is above the third */
+  left: -30%; 
+  z-index: 2; 
 }
 .image4 {
-  width: 22vw; /* Adjust size as needed */
-  right: -30%;/* Adjust to hide 30% behind image 1 */
-  z-index: 2; /* Ensure the second image is above the third */
+  width: 22vw; 
+  right: -30%;
+  z-index: 2; 
   height: auto;
 }
 
 .image3 {
-  width: 13.75vw; /* Adjust size as needed */
-  left: -50%; /* Adjust to hide 30% behind image 2 */
-  z-index: 1; /* Ensure the third image is behind the others */
+  width: 13.75vw; 
+  left: -50%; 
+  z-index: 1; 
   height: auto;
 }
 
 
 .image5 {
-  width: 13.75vw; /* Adjust size as needed */
-  right: -50%; /* Adjust to hide 30% behind image 2 */
-  z-index: 1; /* Ensure the third image is behind the others */
+  width: 13.75vw; 
+  right: -50%; 
+  z-index: 1; 
   height: auto;
 }
 
 .buttons {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-content: center;
+  margin-top: 20px;
   align-items: center;
+  width:auto;
+}
+.button-item {
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+  size: 1vw;
 }
